@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>NZSetinterval</title>
 </head>
 <body>
 <script src="nz.setinterval.js"></script>
@@ -16,17 +16,6 @@
         console.log("demo2");
         this.stop = true;
     }, 1000);
-    //demo3 shard function
-    window.setInterval = function (cb, ms) {
-        return new NZSetinterval(function () {
-            cb();
-        }, ms);
-    }
-    var i = 0,
-            timer = setInterval(function () {
-                if (i++ >= 5)timer.stop = true;
-                console.log("demo3");
-            }, 1000);
 </script>
 </body>
 </html>
